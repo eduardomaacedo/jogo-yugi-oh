@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugi-Oh Elements</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Link para CSS opcional -->
+</head>
+<body>
+    <div class="bg-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/assets/video/yugi.mp4" type="video/mp4"/>
+        </video>
+    </div>
+
+    <div class="container">
+        <!-- Esquerda -->
+        <div class="container__left framed-golden-2">
+            <div class="score_box frame">
+                <span id="score_points">Win: 0 | Lose: 0</span>
+            </div>
+            <div class="menu_avatar">
+                <img id="card-image" height="180px" width="125px">
+            </div>
+            <div class="card_details frame">
+                <p id="card-name">Selecione</p>
+                <p id="card-type">Uma Carta</p>
+            </div>
+        </div>
+
+        <!-- Direita -->
+        <div class="container__right">
+            <div class="card-box__container">
+                <!-- Cartas do Computador -->
+                <div class="card-box framed" id="computer-cards"></div>
+
+                <!-- Campo de Batalha -->
+                <div class="card-versus__container" >
+                    <div class="versus-top" >
+                        <div class="card-infield">
+                            <div id="player-infield-card" class="field"></div>
+                        </div>
+                        <img height="100px" src="./src/assets/icons/millenium2.png">
+                        <div class="card-infield">
+                            <div id="computer-infield-card" class="field"></div>
+                        </div>
+                    </div>
+                    <div class="versus-bottom">
+                        <button id="next-duel" class="rpgui-button">Next Duel</button>
+                    </div>
+                </div>
+
+                <!-- Cartas do Jogador -->
+                <div class="card-box framed" id="player-cards"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
+
+    
